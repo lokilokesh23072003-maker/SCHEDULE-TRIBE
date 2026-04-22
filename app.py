@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Re-load the DataFrame from the original Excel file since the kernel state shows df is empty
-df = pd.read_excel("/content/scheduled tribes aba .xlsx")
+df = pd.read_excel("scheduled tribes aba.xlsx")
 
 # Re-process the Year column as done previously
 df['Year'] = df['Year'].astype(str).str.extract(r'(\d{4})').astype(int)
